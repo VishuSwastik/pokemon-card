@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap');
+
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555555;
+}
+
+
+.content-wrapper {
+    display: block;
+    margin: auto;
+    max-height: 1700px;
+    max-width: 1700px;
+}
+
+
+body {
+    background-color: white;
+    background-image:url(https://mrwallpaper.com/images/high/cute-pokemon-eevee-colors-4fua85ugiosi6mzx.jpg);
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1 {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+#pokemon-search-form {
+    text-align: center;
+}
+
+#pokemon-type-filter {
+    text-align: center;
+}
+
+#pokemon-type-filter .type-filter {
+     padding: 13px;
+     background-color: black;
+     color:white;
+     border-radius: 20px;
+     font-size: 20px;
+     font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+.form-spacers{
+    height: 10px;
+}
+
+.type-filter{
+    margin: 10px;;
+}
+
+.filter-by-type {
+    padding: 13px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 13px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#pokemon-search-input{
+    padding: 6px;
+    background-color: white;
+    width:350px;
+    font-size: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+}
+
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* flip card container  */
+.flip-card {
+    margin: 20px;
+    width: 200px;
+    height: 275px;
+    text-align: center;
+    justify-content: center;
+    perspective: 1000px;
+    opacity: 0.95;
+}
+
+
+.flip-card-inner {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+
+.front-pokemon-card, .back-pokemon-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-pokemon-card {
+    z-index: 2;
+    transform: rotateY(0);
+}
+
+.back-pokemon-card {
+    transform: rotateY(180deg);
+}
+
+.front-pokemon-image, .back-pokemon-image {
+    position: relative;
+    top: 50px;
+}
+
+.front-poke-id, .back-poke-id {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #555555;
+    justify-content: left;
+}
+
+
+
+.front-pokemon-type {
+    width: fit-content;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+
+    margin: auto;
+    bottom: -12.5px;
+    font-size: small;
+}
+
+#grass {
+    background-color: #25f905;
+}
+
+#bug {
+    background-color: #9fea4a;
+}
+
+#fire {
+    background-color :#f46c0b;
+}
+
+#water {
+    background-color: #37afff;
+}
+
+#ice {
+    background-color: #7ed3ed;
+}
+
+#electric {
+    background-color: #d3e912;
+}
+
+#psychic {
+    background-color:  #f366b9;
+}
+
+
+#fairy {
+    background-color: #fdb9e9;
+}
+
+#ghost {
+    background-color: #7b62a3;
+}
+
+#ground {
+    background-color: #f7de3f;
+}
+
+#poison {
+    background-color: #b97fc9;
+}
+
+#fairy {
+    background-color: #fdb9e9;
+}
+
+#normal {
+    background-color: #a4acaf;
+}
+
+#dragon {
+    background-color: goldenrod;
+}
+
+#fighting {
+    background-color: #d56723;
+}
+
+#rock {
+    background-color: #a38c21;
+}
